@@ -138,6 +138,36 @@ from tensorflow.keras.models import load_model
 import pickle
 
 model = load_model('ann_model.keras')
+==============
+```
+
+
+### Project Structure
+
+Customer-Churn-Prediction/
+
+- model/
+- ann_model.keras
+- scaler.pkl
+- notebook/
+- churn_model.ipynb
+- data/
+Churn_Modelling.csv
+README.md
+
+### Technologies Used
+Python
+Pandas & NumPy
+Scikit-learn
+TensorFlow / Keras
+Matplotlib & Seaborn
+### Conclusion
+ANN achieved good accuracy (86%)
+Model is biased toward majority class
+Further tuning required for real-world deployment
+### Note
+
+This project was developed for academic purposes and enhanced with AI-assisted explanations.
 
 with open('scaler.pkl', 'rb') as f:
     scaler = pickle.load(f) ```
