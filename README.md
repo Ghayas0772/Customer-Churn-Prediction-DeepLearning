@@ -130,7 +130,7 @@ Missing churn customers can impact retention strategies.
 
 ---
 
-## 🔄 Model Loading
+## Model Loading
 
 ```python
 from tensorflow.keras.models import load_model
@@ -160,10 +160,10 @@ Pandas & NumPy
 Scikit-learn
 TensorFlow / Keras
 Matplotlib & Seaborn
-🎯 Conclusion
+### Conclusion
 ANN achieved good accuracy (86%)
 Model is biased toward majority class
 Further tuning required for real-world deployment
-📢 Note
+### Note
 
 This project was developed for academic purposes and enhanced with AI-assisted explanations.
