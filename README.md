@@ -132,25 +132,27 @@ Missing churn customers can impact retention strategies.
 
 ## Model Loading
 
-```python
+```
+python
 from tensorflow.keras.models import load_model
 import pickle
 
 model = load_model('ann_model.keras')
 
 with open('scaler.pkl', 'rb') as f:
-    scaler = pickle.load(f)```
-    
+    scaler = pickle.load(f) ```
+
+
 ### Project Structure
 
 Customer-Churn-Prediction/
 
-model/
-ann_model.keras
-scaler.pkl
-notebook/
-churn_model.ipynb
-data/
+- model/
+- ann_model.keras
+- scaler.pkl
+- notebook/
+- churn_model.ipynb
+- data/
 Churn_Modelling.csv
 README.md
 
