@@ -83,3 +83,86 @@ The project includes:
 ###  Confusion Matrix:
 [[1513 94]
 [ 186 207]]
+
+
+
+### 📋 Key Metrics:
+
+| Metric        | Stayed (0) | Exited (1) |
+|--------------|-----------|-----------|
+| Precision    | 0.89      | 0.69      |
+| Recall       | 0.94      | 0.53      |
+| F1-score     | 0.92      | 0.60      |
+
+---
+
+## 🔍 Key Insights
+
+- Model performs **very well on non-churn customers (Stayed)**
+- Struggles with detecting churn customers (Exited)
+- Recall for churn = **53%** → needs improvement
+
+### ⚠️ Business Insight:
+Missing churn customers can impact retention strategies.
+
+---
+
+## 📌 Improvements
+
+- Handle class imbalance:
+  - SMOTE (Oversampling)
+  - Class weights
+
+- Try advanced models:
+  - Random Forest
+  - XGBoost
+  - Gradient Boosting
+
+---
+
+## 💾 Model Saving
+
+- ANN Model:
+  - `ann_model.keras`
+
+- Scaler:
+  - `scaler.pkl`
+
+---
+
+## 🔄 Model Loading
+
+```python
+from tensorflow.keras.models import load_model
+import pickle
+
+model = load_model('ann_model.keras')
+
+with open('scaler.pkl', 'rb') as f:
+    scaler = pickle.load(f)
+    
+Project Structure
+
+Customer-Churn-Prediction/
+
+model/
+ann_model.keras
+scaler.pkl
+notebook/
+churn_model.ipynb
+data/
+Churn_Modelling.csv
+README.md
+🛠️ Technologies Used
+Python
+Pandas & NumPy
+Scikit-learn
+TensorFlow / Keras
+Matplotlib & Seaborn
+🎯 Conclusion
+ANN achieved good accuracy (86%)
+Model is biased toward majority class
+Further tuning required for real-world deployment
+📢 Note
+
+This project was developed for academic purposes and enhanced with AI-assisted explanations.
