@@ -86,7 +86,7 @@ The project includes:
 
 
 
-### 📋 Key Metrics:
+### Key Metrics:
 
 | Metric        | Stayed (0) | Exited (1) |
 |--------------|-----------|-----------|
@@ -96,18 +96,18 @@ The project includes:
 
 ---
 
-## 🔍 Key Insights
+##  Key Insights
 
 - Model performs **very well on non-churn customers (Stayed)**
 - Struggles with detecting churn customers (Exited)
 - Recall for churn = **53%** → needs improvement
 
-### ⚠️ Business Insight:
+###  Business Insight:
 Missing churn customers can impact retention strategies.
 
 ---
 
-## 📌 Improvements
+##  Improvements
 
 - Handle class imbalance:
   - SMOTE (Oversampling)
@@ -120,7 +120,7 @@ Missing churn customers can impact retention strategies.
 
 ---
 
-## 💾 Model Saving
+##  Model Saving
 
 - ANN Model:
   - `ann_model.keras`
@@ -139,9 +139,9 @@ import pickle
 model = load_model('ann_model.keras')
 
 with open('scaler.pkl', 'rb') as f:
-    scaler = pickle.load(f)
+    scaler = pickle.load(f)```
     
-Project Structure
+### Project Structure
 
 Customer-Churn-Prediction/
 
@@ -153,7 +153,8 @@ churn_model.ipynb
 data/
 Churn_Modelling.csv
 README.md
-🛠️ Technologies Used
+
+### Technologies Used
 Python
 Pandas & NumPy
 Scikit-learn
