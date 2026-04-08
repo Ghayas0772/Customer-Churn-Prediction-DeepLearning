@@ -20,7 +20,7 @@ The project includes:
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 - File: `Churn_Modelling.csv`
 - Total Records: 10,000 customers
@@ -37,7 +37,7 @@ The project includes:
 
 ---
 
-## ⚙️ Data Preprocessing
+##  Data Preprocessing
 
 ✔ Removed unnecessary columns (RowNumber, CustomerId, Surname)  
 ✔ One-hot encoding:
@@ -53,7 +53,7 @@ The project includes:
 
 ---
 
-## 🧠 Model Architecture (ANN)
+## Model Architecture (ANN)
 
 - Input Layer: based on features  
 - Hidden Layer 1: 6 neurons (ReLU)  
@@ -67,7 +67,7 @@ The project includes:
 
 ---
 
-## 🚀 Model Training
+##  Model Training
 
 - Epochs: 100  
 - Batch Size: 10  
@@ -75,9 +75,11 @@ The project includes:
 
 ---
 
-## 📈 Model Performance
+##  Model Performance
 
-### ✅ Test Accuracy:
+###  Test Accuracy:
 **86%**
 
-### 📊 Confusion Matrix:
+###  Confusion Matrix:
+[[1513 94]
+[ 186 207]]
